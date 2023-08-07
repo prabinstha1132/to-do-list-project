@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding: 0;
+box-sizing: border-box;
+font-family: cursive;
+}
+.container{
+    background-image: url(img/fall.jpg);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.todo{
+    max-width: 500px;
+    width: 100%;
+border: 2px solid white;
+background-color: rgb(43 48 57 / 47%);
+border-radius: 6px;
+margin-top: 50px;
+margin-bottom: 400px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+}
+.head h2{
+    color: aliceblue;
+}
+.head img{
+    height: 30px;
+    width: 30px;
+    margin: 0px 6px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#add-items{
+    margin: 0px 5px;
+    height: 30px;
+    width: 202px;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    outline:none;
+}
+.add{
+    width: 72px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    color: antiquewhite;
+    margin: 0px 80px;
+    margin-top: 5px;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content:'';
+    height:21px;
+    border-radius: 50%;
+    width:19px;
+    background-image:url(img/unchecked.png);
+    background-size:cover;
+    position: absolute;
+    background-position:center;
+    top:1px;
+    left:-27px;
+    
+}
+.checked{
+    color: rgb(118, 176, 193);
+    text-decoration: line-through;
+}
+.checked::before{
+    background-image: url(img/checked.png);
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    font-size: 35px;
+    top: -11px;
+    border-radius: 50%;
+
+}
